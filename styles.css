@@ -92,3 +92,25 @@ h1 { font-size: clamp(2.3rem, 7vw, 4.4rem); font-weight: 750; max-width: 14ch; }
 
 .footer { border-top: 1px solid var(--hairline); padding-top: 24px; padding-bottom: 40px; display: grid; gap: 6px;
   font-size: 0.82rem; color: var(--slate); }
+
+/* Help and policy pages (face-hugger/ and later apps). */
+.nav a[aria-current] { color: var(--ink); font-weight: 650; }
+.doc { max-width: 760px; padding-top: 40px; padding-bottom: 64px; }
+.doc h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); margin-bottom: 8px; }
+.doc section { border-top: 1px solid var(--hairline); margin-top: 32px; padding-top: 24px; }
+.doc h2 { font-size: 1.4rem; margin-bottom: 12px; }
+.doc p, .doc li { color: var(--slate); }
+.doc p + p { margin-top: 0.9em; }
+.doc ul { padding-left: 1.2em; margin: 0; }
+.doc li + li { margin-top: 0.4em; }
+.doc strong { color: var(--ink); }
+.doc-hero { display: grid; gap: 20px; align-items: center; }
+.doc-hero img { width: 96px; height: 96px; }
+.doc-hero .status { margin-top: 12px; font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+@media (min-width: 640px) { .doc-hero { grid-template-columns: 120px 1fr; } .doc-hero img { width: 120px; height: 120px; } }
+.doc details { border-bottom: 1px solid var(--hairline); }
+.doc summary { cursor: pointer; font-weight: 600; color: var(--ink); min-height: 48px; padding: 12px 0; display: flex; align-items: center; }
+.doc .answer { padding-bottom: 16px; }
+.doc-contact { background: var(--card); border: 1px solid var(--hairline); border-radius: 18px; padding: 24px !important; }
+.fine { margin-top: 28px; font-size: 0.82rem; }
+.doc .doc-hero { border-top: 0; margin-top: 0; padding-top: 0; }

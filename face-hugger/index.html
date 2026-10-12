@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Face Hugger · Bubstack</title>
+  <meta name="description" content="Face Hugger: a native Mac upload manager for Hugging Face. Help and support.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="../assets/face-hugger.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="shell topbar">
+    <a class="brand" href="../"><img src="../assets/bub.png" alt="" width="40" height="40">Bubstack</a>
+    <nav class="nav" aria-label="Face Hugger"><a href="./" aria-current="page">Help</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <main id="main" class="shell doc">
+    <section class="doc-hero">
+      <img src="hugger.png" alt="Face Hugger's mascot" width="120" height="120">
+      <div>
+        <p class="eyebrow">Mac · macOS 15 or later</p>
+        <h1>Face Hugger</h1>
+        <p class="intro">A native Mac upload manager for Hugging Face. Give your big model and dataset folders a home.</p>
+        <p class="status">Coming soon to the Mac App Store · Free</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>What it does</h2>
+      <ul>
+        <li>Prepare model or dataset folders, with destination paths and include and exclude filters.</li>
+        <li>Review remote path conflicts before you upload.</li>
+        <li>Queue uploads, stop them, and retry interrupted work when you choose. Uploads resume after a restart.</li>
+        <li>Browse remote folders, create public or private repositories, and delete individual files after confirming.</li>
+        <li>Draft a dataset card from your folder's metadata, optionally with Apple Intelligence on your Mac.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Common questions</h2>
+      <details open><summary>What kind of access token do I need?</summary><div class="answer"><p>A Hugging Face
+        access token that can write to the repository you're uploading to. Create one in your Hugging Face account
+        settings. Face Hugger keeps it in your Mac's Keychain. Removing the account in Face Hugger deletes its saved
+        copy, but it doesn't revoke the token; do that in your Hugging Face settings.</p></div></details>
+      <details><summary>Does my Mac need to stay awake?</summary><div class="answer"><p>Yes. Uploads run in the app,
+        so it has to stay open and your Mac awake. Face Hugger can keep running after you close its window, and can
+        optionally prevent idle sleep while it uploads.</p></div></details>
+      <details><summary>Will uploading replace files that are already there?</summary><div class="answer"><p>Files at
+        matching paths may be replaced; other remote files stay. Face Hugger shows matching paths before you start.
+        A matching path doesn't prove the contents are the same.</p></div></details>
+      <details><summary>Does Face Hugger send my files anywhere else?</summary><div class="answer"><p>No. Files go
+        straight from your Mac to Hugging Face. There's no Face Hugger server, analytics or crash reporting. Dataset-card
+        drafting runs on your Mac. See the <a href="privacy.html">privacy policy</a>.</p></div></details>
+    </section>
+
+    <section class="doc-contact">
+      <h2>Still need a hand?</h2>
+      <p>Email <a href="mailto:support@bubstack.dev?subject=Face%20Hugger%20support">support@bubstack.dev</a>. Include
+        your macOS version, Face Hugger version, and the steps that led to the problem. <strong>Never send your access
+        token.</strong></p>
+      <p>Face Hugger is open source. You can also <a href="https://github.com/bubstackdev/face-hugger/issues">report a
+        bug on GitHub</a>, but anything posted there is public.</p>
+    </section>
+
+    <p class="fine">Face Hugger is an independent project, not an official Hugging Face application.</p>
+  </main>
+
+  <footer class="shell footer">
+    <p><a href="../">Bubstack</a> · <a href="privacy.html">Face Hugger privacy policy</a></p>
+  </footer>
+</body>
+</html>
