@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help and privacy information for MIDI Me, a free MIDI player for Mac, iPhone, and iPad.">
+  <meta name="color-scheme" content="light dark">
+  <title>MIDI Me — Support</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="MIDI Me support home"><img src="assets/icon.png" width="48" height="48" alt="">MIDI Me</a>
+      <nav class="nav" aria-label="Main navigation"><a href="./" aria-current="page">Support</a><a href="privacy/">Privacy</a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="welcome">
+        <p class="eyebrow">Mac · iPhone · iPad</p>
+        <h1 id="welcome">More music.<br>Less in the way.</h1>
+        <p class="intro">MIDI Me is a free MIDI player for listening, exploring parts, and practicing at your own pace. Find a little help getting the music moving.</p>
+        <p class="status"><a href="https://apps.apple.com/us/app/midime/id6757321093">Free on the Mac App Store</a> · iPhone and iPad coming soon</p>
+      </section>
+      <div class="principles" aria-label="Our commitments">
+        <div class="principle"><h3>Free to play.</h3><p>No ads, subscriptions, or paid feature unlocks.</p></div>
+        <div class="principle"><h3>Yours to practice.</h3><p>Adjust the speed, isolate parts, and repeat a passage.</p></div>
+        <div class="principle"><h3>Private by default.</h3><p>No accounts or app analytics. Your library stays local.</p></div>
+      </div>
+      <section class="support-grid" aria-labelledby="help">
+        <div class="section-label"><p class="eyebrow">A few useful notes</p><h2 id="help">Getting unstuck.</h2><p>Start here for the most common playback and practice questions.</p></div>
+        <div class="questions">
+          <details open><summary>How do I open a MIDI file?</summary><div class="answer"><p>Choose <strong>Add MIDI files</strong> in the library (or <strong>Open MIDI…</strong> on Mac) and select a <strong>.mid, .midi, or .kar</strong> file. MIDI Me keeps a local copy in its library. On Mac, you can also drop a MIDI file into the player.</p><p>MIDI contains musical instructions, not recorded audio. An MP3 or WAV cannot be opened as a MIDI song. If a file is rejected, confirm it is a valid Standard MIDI File; changing its extension does not convert it. Standard MIDI formats 0 and 1 with musical beat timing are supported; format 2 and SMPTE-timed files are not supported yet.</p></div></details>
+          <details><summary>The playhead moves, but I hear nothing.</summary><div class="answer"><ol><li>Check the player volume and your device’s audio output.</li><li>Check that the parts you want to hear are not muted. An active solo can silence other parts.</li><li>Check the MIDI output selection. An external MIDI destination needs its own connected instrument or software to produce sound.</li><li>If you imported a soundbank, try the bundled soundbank. A bank may not contain every instrument your file requests.</li></ol></div></details>
+          <details><summary>How do I repeat a passage?</summary><div class="answer"><p>In the practice controls, seek to the beginning of the passage and choose <strong>Set A</strong>. Seek to a later point and choose <strong>Set B</strong>. Playback repeats between those points. Choose <strong>Clear loop</strong> to return to the whole song.</p><p>Set B becomes available only when the current position is later than A. Speed controls let you slow the passage down while you practice. Sample-accurate loop boundaries are still in development, so very short loops can have an audible boundary.</p></div></details>
+          <details><summary>What does transpose change?</summary><div class="answer"><p>Transpose shifts melodic playback up or down in semitones. Standard MIDI drum channel 10 keeps its original percussion notes. The piano roll displays the original notes in the file.</p><p>Your source MIDI stays unchanged. Exporting the original MIDI gives you that original file; rendering a WAV applies the current playback settings.</p></div></details>
+          <details><summary>Can I use a different sound or instrument?</summary><div class="answer"><p>Open the instrument controls to choose an instrument and level for each MIDI channel. Tracks that share a channel also share its instrument and level. Choose <strong>From MIDI file</strong> or reset the channel level to follow the file again.</p><p>You can import an <strong>SF2 or DLS soundbank</strong> from the player options. A soundbank changes the sounds used to play the notes; it is separate from the MIDI song.</p></div></details>
+          <details><summary>Why are there no lyrics or markers?</summary><div class="answer"><p>Lyrics and markers appear only when the MIDI file includes those events. MIDI Me does not generate lyrics, transcribe audio, or infer lyrics from track names. Select a lyric line or marker to seek to its position.</p></div></details>
+          <details><summary>What happens when I export?</summary><div class="answer"><p><strong>Export original MIDI</strong> saves a copy of the source file. <strong>Export audio…</strong> → <strong>Create WAV…</strong> renders audio with the selected soundbank, speed, transpose, and mix settings. A practice loop is not repeated in the WAV.</p><p>You choose where to save or share the result. Exporting does not upload it to MIDI Me.</p></div></details>
+        </div>
+      </section>
+      <section class="contact" aria-labelledby="contact">
+        <div><p class="eyebrow" style="color:#c5cdc5">Still need a hand?</p><h2 id="contact">Tell us what happened.</h2><p>Include your device, OS version, MIDI Me version, and the steps that led to the problem. An exact error message helps.</p><p class="small">GitHub issues are public and require a GitHub account. Do not include private files or personal information.</p></div>
+        <a class="button" href="https://github.com/zak-keown/midi-me-support/issues/new">Get support on GitHub <span aria-hidden="true">&nbsp;↗</span></a>
+      </section>
+    </main>
+    <footer class="footer"><span>MIDI Me · Made for the music.</span><a href="privacy/">Privacy policy</a></footer>
+  </div>
+</body>
+</html>
