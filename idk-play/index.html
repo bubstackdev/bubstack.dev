@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>IDK Play</title>
+<meta name="description" content="IDK Play builds a random practice set from your own library of songs. Support and privacy information.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1d1c1a;
+    --muted: #5f5b54;
+    --accent: #7a3fd1;
+    --rule: #e4e0d8;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151413;
+      --text: #ecebe8;
+      --muted: #a8a49c;
+      --accent: #b99bff;
+      --rule: #2e2c29;
+      --card: #1d1c1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+  header { border-bottom: 1px solid var(--rule); margin-bottom: 1.5rem; padding-bottom: 1rem; }
+  .app { color: var(--accent); font-weight: 600; letter-spacing: .02em; margin: 0; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: .25rem 0 .5rem; }
+  h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .25rem; }
+  p, li { max-width: 65ch; }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  .muted { color: var(--muted); font-size: .95rem; }
+  .summary { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 1rem 1.25rem; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="app">IDK Play</p>
+    <h1>Random practice set lists</h1>
+    <p class="muted">Keep a library of the songs, pieces, and exercises you’re working on. Tell IDK Play how long you have, and it builds a random practice set that fits. For any instrument, on iPhone.</p>
+  </header>
+  <ul>
+    <li><a href="support.html">Support and FAQ</a></li>
+    <li><a href="privacy-policy.html">Privacy policy</a></li>
+  </ul>
+</main>
+</body>
+</html>

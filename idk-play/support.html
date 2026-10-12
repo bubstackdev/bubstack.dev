@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>IDK Play Support</title>
+<meta name="description" content="Help for IDK Play: adding songs from the Share sheet, tags, warm-ups, Generate rules, and your data.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1d1c1a;
+    --muted: #5f5b54;
+    --accent: #7a3fd1;
+    --rule: #e4e0d8;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151413;
+      --text: #ecebe8;
+      --muted: #a8a49c;
+      --accent: #b99bff;
+      --rule: #2e2c29;
+      --card: #1d1c1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+  header { border-bottom: 1px solid var(--rule); margin-bottom: 1.5rem; padding-bottom: 1rem; }
+  .app { color: var(--accent); font-weight: 600; letter-spacing: .02em; margin: 0; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: .25rem 0 .5rem; }
+  h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .25rem; }
+  p, li { max-width: 65ch; }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  .muted { color: var(--muted); font-size: .95rem; }
+  .summary { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 1rem 1.25rem; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="app">IDK Play</p>
+    <h1>Support</h1>
+    <p class="muted">IDK Play builds a random practice set from your own library of songs, pieces, and exercises. Here are answers to the most common questions.</p>
+  </header>
+
+  <h2>How do I add a song from YouTube?</h2>
+  <ol>
+    <li>In the YouTube app (or Safari on youtube.com), open the video.</li>
+    <li>Tap <strong>Share</strong>, then tap <strong>Add to IDK Play</strong>. If you don’t see it, scroll the row of apps to the end and tap <strong>More</strong> to find it (tap <strong>Edit</strong> there to add it to your favorites).</li>
+    <li>Check the title, add a few tags, and tap <strong>Save</strong>. The length fills in automatically for YouTube videos; for other links, enter the minutes and seconds yourself.</li>
+    <li>Open IDK Play. The song appears in your Library.</li>
+  </ol>
+  <p>You can also tap <strong>+</strong> in Library to add a song by hand. Links are optional, so exercises and pieces from a book work too.</p>
+
+  <h2>Can I try it with sample songs?</h2>
+  <p>Yes. On first launch, tap <strong>Add Sample Songs</strong> for a few example exercises, or <strong>Start with an Empty Library</strong> to begin with your own. If you skipped that, tap <strong>Add Sample Songs</strong> on the empty Library screen, or in Settings (the gear at the top left of Library). The samples are ordinary songs you can edit or delete anytime. To see the introduction again, open Settings and tap <strong>Show Introduction Again</strong>.</p>
+
+  <h2>What are tags for?</h2>
+  <p>Tags are short labels you choose, like “jazz”, “technique”, “new”, or “sight-reading”. Use as many as you like per song. In Library you can filter by a tag or search for one. In Generate, tags are how you ask for a certain mix of songs.</p>
+
+  <h2>What does “Start with a warm-up” do?</h2>
+  <p>When it’s on, IDK Play starts the set with one song tagged <strong>warm-up</strong> (also written “warmup” or “warm up”; capitals don’t matter). If none of your songs has that tag, the set simply starts without one. Add the tag to a song or two to use it.</p>
+
+  <h2>How do the rules in Generate work?</h2>
+  <ol>
+    <li>Pick how long you want to practice.</li>
+    <li>Optionally add rules: choose a tag from your library and how many songs with that tag you want.</li>
+    <li>Tap <strong>Generate Practice Session</strong>. IDK Play adds the warm-up (if on), then songs for each rule, then fills the remaining time with other songs at random. It never goes over your time.</li>
+  </ol>
+  <p>If your library doesn’t have enough songs for a rule, or they don’t fit in the time, IDK Play says so, for example: “Only 1 ‘Jazz’ song in your library (wanted 3).” You can still use, edit, or regenerate the set. Your settings are remembered for next time.</p>
+
+  <h2>Can I change a generated set?</h2>
+  <p>Yes. Tap <strong>Edit</strong> to reorder or remove songs, add a song from your library, or tap <strong>Regenerate</strong> for a new random set. <strong>Save to Archive</strong> keeps it in Sessions, where you can rename it, delete it, or tap <strong>Practice Again</strong> to load it back into Generate.</p>
+
+  <h2>Can I use the standard iPhone font?</h2>
+  <p>Yes. In Library, tap the gear to open Settings and turn off <strong>Setlist lettering</strong>. IDK Play and its Share extension then use the standard iPhone font everywhere. Text still follows your iPhone’s text size setting either way.</p>
+
+  <h2>Where is my data stored?</h2>
+  <p>On your iPhone, inside IDK Play. There is no account and nothing is sent to the developer. The only network requests are reading a YouTube video’s length when you share it, and opening links you tap. See the <a href="privacy-policy.html">privacy policy</a>.</p>
+
+  <h2>Does it sync between devices?</h2>
+  <p>Not in this version. Your library lives on this iPhone.</p>
+
+  <h2>How do I delete my data?</h2>
+  <ul>
+    <li><strong>Delete a song:</strong> in Library, swipe left on it and tap Delete.</li>
+    <li><strong>Delete a saved session:</strong> in Sessions, swipe left on it and tap Delete, or touch and hold it, tap Delete, then tap Delete Session.</li>
+    <li><strong>Delete all songs and sessions:</strong> in Library, tap the gear to open Settings, tap Delete All Songs and Sessions, then confirm twice. This also clears your saved Generate settings and any shared songs that haven’t been added yet. It can’t be undone.</li>
+    <li><strong>Delete everything, including your preferences:</strong> delete the IDK Play app from your iPhone.</li>
+  </ul>
+
+  <h2>Is there an iPad or Mac version?</h2>
+  <p>Not yet. IDK Play is for iPhone.</p>
+
+  <h2>Contact</h2>
+  <p class="summary">Found a bug or have an idea? Email <a href="mailto:support@bubstack.dev">support@bubstack.dev</a>. Please include your iPhone model, iOS version, and what you tapped before the problem happened.</p>
+
+  <footer class="muted"><a href="privacy-policy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
